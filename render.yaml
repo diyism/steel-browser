@@ -2,12 +2,25 @@ services:
   - type: web
     name: steel-browser
     env: docker
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: Dockerfile
+    dockerContext: .
     healthCheckPath: /v1/health
     envVars:
+      - key: HOST_IP
+        value: localhost
+      - key: VITE_API_URL
+        value: http://localhost:3000
+      - key: VITE_WS_URL
+        value: ws://localhost:3000
+      - key: VITE_OPENAPI_URL
+        value: http://localhost:3000/documentation/json
       - key: NODE_ENV
         value: production
     disk:
       name: cache
       mountPath: /app/.cache
       sizeGB: 1
+    ports:
+      - 3000
+      - 5173
+      - 9223
