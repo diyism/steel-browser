@@ -71,9 +71,9 @@ RUN chmod +x /app/api/entrypoint.sh /app/entrypoint.sh
 ENV HOST_IP=localhost
 ENV DISPLAY=:10
 ENV DBUS_SESSION_BUS_ADDRESS=autolaunch:
-ENV VITE_API_URL=http://localhost:3000
-ENV VITE_WS_URL=ws://localhost:3000
-ENV VITE_OPENAPI_URL=http://localhost:3000/documentation/json
+ENV VITE_API_URL=/api
+ENV VITE_WS_URL=ws://localhost/api
+ENV VITE_OPENAPI_URL=/api/documentation/json
 
 # Expose ports
 EXPOSE 5173
