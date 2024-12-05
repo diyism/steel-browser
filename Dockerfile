@@ -60,9 +60,9 @@ RUN mkdir -p /selenium/driver \
 COPY --from=api-build /app/api /app/api
 COPY --from=ui-build /app/ui/dist /app/ui
 
-# Copy API entrypoint
+# Copy configuration files
+COPY nginx.conf /app/nginx.conf
 COPY api/entrypoint.sh /app/api/entrypoint.sh
-# Copy our new combined entrypoint
 COPY combined-entrypoint.sh /app/entrypoint.sh
 
 RUN chmod +x /app/api/entrypoint.sh /app/entrypoint.sh
