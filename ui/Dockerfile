@@ -2,9 +2,9 @@ FROM node:18
 
 WORKDIR /app
 
-ARG VITE_API_URL=http://localhost:3000
-ARG VITE_WS_URL=ws://localhost:3000
-ARG VITE_OPENAPI_URL=http://localhost:3000/documentation/json
+ARG VITE_API_URL=/api
+ARG VITE_WS_URL=ws://localhost/api
+ARG VITE_OPENAPI_URL=/api/documentation/json
 
 LABEL org.opencontainers.image.source="https://github.com/steel-dev/steel-browser"
 
