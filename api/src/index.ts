@@ -9,7 +9,8 @@ export const server = buildFastifyServer({
 });
 
 const HOST = process.env.HOST ?? "0.0.0.0";
-const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+//const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+const PORT = 3000;
 
 server.listen({ port: PORT, host: HOST }, (err, address) => {
   if (err) {
