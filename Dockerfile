@@ -58,7 +58,7 @@ RUN mkdir -p /selenium/driver \
 
 # Copy built applications
 COPY --from=api-build /app/api /app/api
-COPY --from=ui-build /app/ui/dist /app/ui
+COPY --from=ui-build /app/ui /app/ui
 
 # Copy configuration files
 COPY nginx.conf /app/nginx.conf
