@@ -79,6 +79,7 @@ ENV VITE_OPENAPI_URL=/api/documentation/json
 EXPOSE 5173
 EXPOSE 3000
 EXPOSE 9223
+EXPOSE 10000
 
 # Start both services
 ENTRYPOINT ["/app/entrypoint.sh"]

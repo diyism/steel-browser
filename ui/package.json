@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "generate-api": "hey-api generate -c openapi.config.ts"
+    "generate-api": "openapi-ts"
   },
   "dependencies": {
     "serve": "^14.0.1",
