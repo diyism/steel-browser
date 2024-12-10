@@ -1,3 +1,9 @@
+    //debug the merged docker image:
+    $ git clone https://github.com/diyism/steel-browser
+    $ cd steel-browser
+    $ docker build -t steel-browser ./Dockerfile
+    $ docker run -it -p 10000:10000 --entrypoint /bin/bash steel-browser
+
 <br />
 <p align="center">
 <a href="https://steel.dev">
