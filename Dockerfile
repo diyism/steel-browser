@@ -36,4 +36,4 @@ RUN /home/node/go/bin/playwright install --with-deps chromium
 ENV SHELL=/bin/bash
 WORKDIR /home/node/
 EXPOSE 7860
-CMD /etc/rc.local; cd /app; ./entrypoint.sh
+CMD jupyter lab --ip=0.0.0.0 --port=7860 --no-browser --allow-root; /etc/rc.local; cd /app; ./entrypoint.sh
