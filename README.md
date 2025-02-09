@@ -1,3 +1,5 @@
+    //don't use this project, the node process cost two much memory, to use huggingface dockerfiles in the "diyism/dockerfiles" project
+    
     // run the original image:
     $ docker run -p 9226:9223  ghcr.io/steel-dev/steel-browser:latest
     // then in chrome dev tools(chrome://inspect/), add "127.0.0.1:9226" into "Configure..."
