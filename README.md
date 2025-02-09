@@ -1,5 +1,6 @@
     // run the original image:
-    $ docker run -p 3000:3000 -p 5173:5173 -p 9223:9223  ghcr.io/steel-dev/steel-browser:latest
+    $ docker run -p 9226:9223  ghcr.io/steel-dev/steel-browser:latest
+    // then in chrome dev tools(chrome://inspect/), add "127.0.0.1:9226" into "Configure..."
     
     //or debug the merged docker image:
     $ git clone https://github.com/diyism/steel-browser
