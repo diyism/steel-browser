@@ -76,9 +76,9 @@ ENV VITE_WS_URL=ws://localhost/api
 ENV VITE_OPENAPI_URL=/api/documentation/json
 
 # Expose ports
+EXPOSE 9223
 EXPOSE 5173
 EXPOSE 3000
-EXPOSE 9223
 EXPOSE 10000
 
 # Start both services
