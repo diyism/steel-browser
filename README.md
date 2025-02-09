@@ -1,4 +1,7 @@
-    //debug the merged docker image:
+    // run the original image:
+    $ docker run -p 3000:3000 -p 5173:5173 -p 9223:9223  ghcr.io/steel-dev/steel-browser:latest
+    
+    //or debug the merged docker image:
     $ git clone https://github.com/diyism/steel-browser
     $ cd steel-browser
     $ docker build -t steel-browser ./Dockerfile
