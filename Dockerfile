@@ -31,7 +31,7 @@ USER node
 RUN jupyter lab --generate-config
 RUN echo "c.PasswordIdentityProvider.password_required=True">>/home/node/.jupyter/jupyter_lab_config.py
 RUN echo "c.PasswordIdentityProvider.hashed_password='argon2:\$argon2id\$v=19\$m=10240,t=10,p=8\$ADVOtoQgkVyBkD2MAacNdg\$RwMBZJA+LsqnMQXxNElfTuUzHUOu1MvaRZ1kypvec9g'">>/home/node/.jupyter/jupyter_lab_config.py
-RUN /usr/local/go/bin/go install github.com/playwright-community/playwright-go/cmd/playwright@latest
+RUN /usr/local/go/bin/go install github.com/playwright-community/playwright-go/cmd/playwright@v0.2000.2-0.20221022152247-2586b3829688
 RUN /home/node/go/bin/playwright install --with-deps chromium
 ENV SHELL=/bin/bash
 WORKDIR /home/node/
