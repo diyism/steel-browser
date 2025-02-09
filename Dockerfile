@@ -35,5 +35,4 @@ RUN /usr/local/go/bin/go install github.com/playwright-community/playwright-go/c
 RUN /home/node/go/bin/playwright install --with-deps chromium
 ENV SHELL=/bin/bash
 WORKDIR /home/node/
-RUN ldd /usr/bin/google-chrome
 CMD /etc/rc.local; cd /app; ./entrypoint.sh
