@@ -1,4 +1,7 @@
-    //don't use this project, the node process cost two much memory, to use huggingface dockerfiles in the "diyism/dockerfiles" project
+    //don't use this project, the node process cost two much memory,
+    //to use huggingface dockerfiles in the "diyism/dockerfiles" project
+    //Dockerfile.huggingface_btc86_playchrome_idx2   +   huggingface_btc86_playchrome_idx2__tight.sh(Xtightvnc binary file in apt install tightvncserver)
+    // /usr/bin/Xtightvnc is the vnc server, /usr/bin/tightvncserver is a a script to boot the vnc server
     
     // run the original image:
     $ docker run -p 9226:9223  ghcr.io/steel-dev/steel-browser:latest
